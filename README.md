@@ -9,12 +9,13 @@
 [![Vite](https://img.shields.io/badge/Vite-7.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Tests](https://img.shields.io/badge/Vitest-21_Passed-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)](src/lib/game.test.ts)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/kirtankumarsanghi/Pricing-the-Game)
 
 <p align="center">
   <strong>Put yourself in the shoes of a food delivery platform executive. Learn why intuition fails, why price wars destroy profits, and how mathematical game theory governs real-world pricing battles.</strong>
 </p>
 
-[Quick Start](#-quick-start) • [The Story](#-the-story) • [Game Theory Chapters](#-game-theory-chapters) • [System Architecture](#-system-architecture) • [Keyboard Controls](#-gameplay-controls) • [Testing](#-testing--verification)
+[Quick Start](#-quick-start) • [Deploy on Vercel](#-deploy-to-vercel) • [The Story](#-the-story) • [Game Theory Chapters](#-game-theory-chapters) • [System Architecture](#-system-architecture) • [Keyboard Controls](#-gameplay-controls)
 
 ---
 
@@ -60,6 +61,39 @@ npm run typecheck
 
 # 6. Build production bundle (self-contained single-file HTML bundle)
 npm run build
+```
+
+---
+
+## 🌐 Deploy to Vercel
+
+This repository is pre-configured with a zero-config [`vercel.json`](vercel.json) build profile. You can deploy it using either method:
+
+### Option A: One-Click Deploy via Vercel Dashboard (Recommended)
+
+1. Click the button below:
+
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/kirtankumarsanghi/Pricing-the-Game)
+
+2. Sign in to your Vercel account and link your GitHub.
+3. Select your repository `Pricing-the-Game`.
+4. Vercel automatically detects the Vite framework settings:
+   - **Framework Preset**: `Vite`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+5. Click **Deploy**. Your site will be live on a `*.vercel.app` domain with automatic HTTPS and instant CI/CD on every git push!
+
+### Option B: Deploy via Vercel CLI
+
+```bash
+# 1. Install or authenticate with Vercel
+npx vercel login
+
+# 2. Deploy preview build
+npx vercel
+
+# 3. Deploy directly to production
+npx vercel --prod
 ```
 
 ---
